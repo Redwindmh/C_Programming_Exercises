@@ -1,0 +1,4 @@
+/**
+ * Write a function rightrot(x,n) that returns x rotated to the right by n
+ * positions.
+ */
