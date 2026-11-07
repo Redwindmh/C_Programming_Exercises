@@ -26,25 +26,25 @@
 */
 
 #include <stdio.h>
+#include <stdlib.h>
 
 int create_arr(int length);
 
 int main(void) {
-  create_arr(5);
-  free();
+  create_arr(8);
   return 0;
 }
 
 int create_arr(int length) {
   if (length == 0) {
-    return -1;
+    return 1;
   }
 
-  int arr_len = malloc(length + 1); // allocate memory
-  int arr[arr_len] = {};            // initialize array
+  int *arr = malloc(length * sizeof(int)); // allocate memory
 
   for (int i = 0; i < length; i++) { // create values in array
     arr[i] = i;
+    printf("%d\n", arr[i]);
   }
 
   return *arr;
